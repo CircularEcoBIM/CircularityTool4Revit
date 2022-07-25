@@ -7,7 +7,7 @@ if not isinstance(revit_names[0], list):
     revit_names = [revit_names] 
 
 translator={
-    'Concrete':['Concrete','C20/25','C25/30','C30/35','C40/50','reinforced','RC','aerated','pre-cast','in-situ','/C\d\d\/\d\d/gi'],
+    'Concrete':['Concrete','C20/25','C25/30','C30/35','C40/50','reinforced','RC','aerated','pre-cast','in-situ'],
     'Steel':['Steel','alloy','S235','S275','S355','S420'],
     'Timber':['Timber','plywood','softwood','oak','pine','wood','lumber','MDF','OSB','parquet','laminate'],
     'Glass':['Glass','Glazing'],
@@ -36,8 +36,9 @@ translator={
     'Soil':['Soil'],
     'Vinyl':['Vinyl'],
     'Zinc':['Zinc'],
-    'Uncategorised':['Uncategorised'],
+    'Uncategorised':['Uncategorised']
 }
+# TODO load from data/file.json
 # TODO add pattern for steel /S\d\d\d/gi and concrete /C\d\d\/\d\d/gi
 
 # to lower case:
