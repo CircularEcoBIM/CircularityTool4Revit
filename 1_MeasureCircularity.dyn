@@ -1364,6 +1364,15 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "440bad59b529479d9e40d3100844f206",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -3403,6 +3412,164 @@
       ],
       "Replication": "Auto",
       "Description": "Averages a list of numbers.\n\nMath.Average (numbers: double[]): double"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".\\data\\Lifespan_expectancy.json",
+      "Id": "ab24c292bcac419888fdf1254a9d68b4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "113b0c6da9f04cb2a506d3d68563767b",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "05b8a5eb270b400fb44bda35dc78b182",
+      "Inputs": [
+        {
+          "Id": "be718c57bcc64d9faec2caac89ced431",
+          "Name": "path",
+          "Description": "Path to the file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "492e8347ecde4b29a376a67f6ecb8714",
+          "Name": "file",
+          "Description": "File object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a file object from a path."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.IO.FileSystem.ReadText@var",
+      "Id": "3f8a11e49d4d42b58be90896d71e97c6",
+      "Inputs": [
+        {
+          "Id": "11a66f8d21634f4b9a8481c39e040979",
+          "Name": "file",
+          "Description": "File object to read text from\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "55221a42b088498990ab9df81a28f3b7",
+          "Name": "string",
+          "Description": "Contents of the text file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Reads a text file and returns the contents as a string.\n\nFileSystem.ReadText (file: var): string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.IO.FileSystem.ReadText@var",
+      "Id": "3718f8ac48cb4ad98e086768968bb2e9",
+      "Inputs": [
+        {
+          "Id": "2ec4539d55f94e99b8b9f2b1a55c5bcd",
+          "Name": "file",
+          "Description": "File object to read text from\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6b3ee7b120c64a1f98cd846abb436be9",
+          "Name": "string",
+          "Description": "Contents of the text file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Reads a text file and returns the contents as a string.\n\nFileSystem.ReadText (file: var): string"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "26d8972b03d442ce9a5698d8a30ab1ff",
+      "Inputs": [
+        {
+          "Id": "a6e37735bf0f4fe086c5e642b552025d",
+          "Name": "path",
+          "Description": "Path to the file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "224e11fd33ad4c7f9eb546c9184d4539",
+          "Name": "file",
+          "Description": "File object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a file object from a path."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".\\data\\Material_mapping.json",
+      "Id": "64561f9cac454dc9987208159cc9bd02",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e0e1da3efd9140f081773651aaa036b4",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
     }
   ],
   "Connectors": [
@@ -3668,8 +3835,8 @@
     },
     {
       "Start": "37bfcb5cd51b4c7d8af666f75c06af63",
-      "End": "d4db087ff061459d9fa1ccf117da7d00",
-      "Id": "b1e71adb57bb4bbbb570f7ccb90f6fb2"
+      "End": "440bad59b529479d9e40d3100844f206",
+      "Id": "c16846f0c053421ea5847cea49b4d5ea"
     },
     {
       "Start": "7c6eb5a8563c4cbd926abdefad061699",
@@ -3995,6 +4162,31 @@
       "Start": "b6eb7b2d207a404aad67ff4f9a457c47",
       "End": "f2b70fbcc67347a1abf3b54bb438ba23",
       "Id": "6cb211e9e7604e8487d173a008ef43df"
+    },
+    {
+      "Start": "113b0c6da9f04cb2a506d3d68563767b",
+      "End": "be718c57bcc64d9faec2caac89ced431",
+      "Id": "77c2b0bfee19484db8890a1005137195"
+    },
+    {
+      "Start": "492e8347ecde4b29a376a67f6ecb8714",
+      "End": "11a66f8d21634f4b9a8481c39e040979",
+      "Id": "280c86720ca4434e8f0f14d813f07e96"
+    },
+    {
+      "Start": "6b3ee7b120c64a1f98cd846abb436be9",
+      "End": "d4db087ff061459d9fa1ccf117da7d00",
+      "Id": "d595d4b7ecaf413d95efa96f1e01f4f2"
+    },
+    {
+      "Start": "224e11fd33ad4c7f9eb546c9184d4539",
+      "End": "2ec4539d55f94e99b8b9f2b1a55c5bcd",
+      "Id": "2001a9b710d043dd8b76318295348183"
+    },
+    {
+      "Start": "e0e1da3efd9140f081773651aaa036b4",
+      "End": "a6e37735bf0f4fe086c5e642b552025d",
+      "Id": "a693a177e0c94130803420c123640f72"
     }
   ],
   "Dependencies": [],
@@ -4439,8 +4631,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1871.0010595831802,
-        "Y": 4227.1119470908416
+        "X": 1812.6267441849159,
+        "Y": 4052.5447630710128
       },
       {
         "ShowGeometry": false,
@@ -4449,8 +4641,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2174.1826445190541,
-        "Y": 4222.5947612139107
+        "X": 2150.9855759986895,
+        "Y": 4048.6761915892066
       },
       {
         "ShowGeometry": false,
@@ -4459,8 +4651,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1105.5929653543574,
-        "Y": 4178.7765418779027
+        "X": 1079.8519184710974,
+        "Y": 3987.0501237129324
       },
       {
         "ShowGeometry": false,
@@ -4469,8 +4661,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1315.3906166106242,
-        "Y": 4180.4281857340611
+        "X": 1338.6812105794243,
+        "Y": 3986.4034094041508
       },
       {
         "ShowGeometry": false,
@@ -4479,8 +4671,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1545.1524115404429,
-        "Y": 4178.5080991322557
+        "X": 1493.3633054545262,
+        "Y": 3986.7816809672854
       },
       {
         "ShowGeometry": false,
@@ -4489,8 +4681,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1425.1716194442672,
-        "Y": 4350.8259868460755
+        "X": 1410.9696625431582,
+        "Y": 4309.1077384490673
       },
       {
         "ShowGeometry": false,
@@ -4669,8 +4861,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1102.7121228304118,
-        "Y": 4319.3728822131143
+        "X": 1088.5101659293027,
+        "Y": 4277.6546338161061
       },
       {
         "ShowGeometry": false,
@@ -4788,7 +4980,7 @@
         "Id": "608a93100b0a426bae4266d56d1b3729",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Excluded": false,
+        "Excluded": true,
         "X": 2852.6863788560527,
         "Y": 3505.462838448022
       },
@@ -4799,8 +4991,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2431.8779551113034,
-        "Y": 3553.48446335007
+        "X": 2433.0549822661073,
+        "Y": 3597.0344680778107
       },
       {
         "ShowGeometry": false,
@@ -4869,7 +5061,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -399.01957753871545,
+        "X": -399.01957753871557,
         "Y": 2882.7643465561869
       },
       {
@@ -4949,7 +5141,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 85.172016012781455,
+        "X": 85.172016012781569,
         "Y": 2967.36006398605
       },
       {
@@ -5031,6 +5223,66 @@
         "Excluded": false,
         "X": 2508.3128733000308,
         "Y": 2654.2291443730242
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "String",
+        "Id": "ab24c292bcac419888fdf1254a9d68b4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 894.73466405529643,
+        "Y": 3758.5994471056497
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "File From Path",
+        "Id": "05b8a5eb270b400fb44bda35dc78b182",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1174.2491796480792,
+        "Y": 3757.9527327968694
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "FileSystem.ReadText",
+        "Id": "3f8a11e49d4d42b58be90896d71e97c6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1377.9629153752494,
+        "Y": 3756.0326461950694
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "FileSystem.ReadText",
+        "Id": "3718f8ac48cb4ad98e086768968bb2e9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1494.7864137619692,
+        "Y": 4092.7263602467847
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "File From Path",
+        "Id": "26d8972b03d442ce9a5698d8a30ab1ff",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1335.5076025569783,
+        "Y": 4098.4770437901516
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "String",
+        "Id": "64561f9cac454dc9987208159cc9bd02",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1084.3395043317917,
+        "Y": 4109.84942953532
       }
     ],
     "Annotations": [
@@ -5153,7 +5405,7 @@
         "Height": 815.35189076812,
         "FontSize": 36.0,
         "InitialTop": 4188.8020759775409,
-        "InitialHeight": 763.528505899038,
+        "InitialHeight": 763.52850589904028,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -5188,15 +5440,18 @@
           "ea33f3dcc32740ea8b41e36e4e4447ba",
           "dc7484f5c693472082a41039e1b64b7b",
           "061fda01ee6143be83910e752eadec58",
-          "de2c09faad994254a964612f8c29b73e"
+          "de2c09faad994254a964612f8c29b73e",
+          "3718f8ac48cb4ad98e086768968bb2e9",
+          "26d8972b03d442ce9a5698d8a30ab1ff",
+          "64561f9cac454dc9987208159cc9bd02"
         ],
-        "Left": 1092.7121228304118,
-        "Top": 4125.3080991322558,
-        "Width": 1288.2705216886425,
-        "Height": 602.11788771382,
+        "Left": 1069.8519184710974,
+        "Top": 3933.203409404151,
+        "Width": 1287.9336575275922,
+        "Height": 752.50432904491663,
         "FontSize": 36.0,
-        "InitialTop": 4178.5080991322557,
-        "InitialHeight": 323.93348260434959,
+        "InitialTop": 3986.4034094041508,
+        "InitialHeight": 317.3178877138198,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -5237,7 +5492,7 @@
         "Height": 202.93628315304341,
         "FontSize": 36.0,
         "InitialTop": 2654.2291443730242,
-        "InitialHeight": 239.57633486305758,
+        "InitialHeight": 186.93628315304341,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -5283,13 +5538,13 @@
           "608a93100b0a426bae4266d56d1b3729",
           "a772e16a521449fdbeeaae9e4a006b7a"
         ],
-        "Left": 2421.8779551113034,
+        "Left": 2423.0549822661073,
         "Top": 3452.2628384480222,
-        "Width": 709.60842374474942,
-        "Height": 197.0,
+        "Width": 708.43139658994551,
+        "Height": 237.37162962978846,
         "FontSize": 36.0,
         "InitialTop": 3505.462838448022,
-        "InitialHeight": 145.0,
+        "InitialHeight": 193.02162490204819,
         "TextblockHeight": 43.2,
         "Background": "#FF48B9FF"
       },
@@ -5320,7 +5575,7 @@
         "Height": 835.66795819364052,
         "FontSize": 30.0,
         "InitialTop": 2663.33761390334,
-        "InitialHeight": 814.867958193643,
+        "InitialHeight": 814.86795819364033,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -5341,7 +5596,7 @@
         "Height": 606.80361614201411,
         "FontSize": 36.0,
         "InitialTop": 3144.547985514509,
-        "InitialHeight": 553.89399631633069,
+        "InitialHeight": 322.00361614201438,
         "TextblockHeight": 43.2,
         "Background": "#FFFFAA45"
       },
@@ -5374,8 +5629,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 283.505293288923,
-    "Y": -417.64354108595558,
-    "Zoom": 0.24713921848610154
+    "X": -467.41310040266603,
+    "Y": -2200.9220948579173,
+    "Zoom": 0.62893616680731257
   }
 }
