@@ -1,44 +1,14 @@
+import json
 
-revit_names = IN[0]
+translator = json.loads(IN[0])
+# translator = json.loads( open(".\data\Material_mapping.json", "r").read() )
+revit_names = IN[1]
 # revit_names = [['C30/35','Galvanised steel','xyz'],['oak']]
 
 # turn into list of lists:
 if not isinstance(revit_names[0], list):
     revit_names = [revit_names] 
 
-translator={
-    'Concrete':['Concrete','C20/25','C25/30','C30/35','C40/50','reinforced','RC','aerated','pre-cast','in-situ'],
-    'Steel':['Steel','alloy','S235','S275','S355','S420'],
-    'Timber':['Timber','plywood','softwood','oak','pine','wood','lumber','MDF','OSB','parquet','laminate'],
-    'Glass':['Glass','Glazing'],
-    'Stone':['Stone','granite','limestone','marble ','slate'],
-    'Ceramic':['Ceramic','Tile'],
-    'Cement':['Cement','screed','fibre cement','CEM','Portland'],
-    'AggregateSand':['Aggregate','Sand'],
-    'Aluminium':['Aluminium'],
-    'Asphalt':['Asphalt'],
-    'Bitumen':['Bitumen'],
-    'Clay':['Clay','Brick'],
-    'Composites':['Composites'],
-    'Copper':['Copper'],
-    'Insulation':['Insulation','XPS','EPS','ETICS'],
-    'Iron':['Iron'],
-    'Lime':['Lime'],
-    'Linoleum':['Linoleum'],
-    'MandE':['MandE'],
-    'Misc':['Misc'],
-    'Paint':['Paint'],
-    'Paper':['Paper','cardboard'],
-    'Plaster':['Plaster','Gypsum','gypsumboard','plasterboard'],
-    'Plastics':['Plastics','PVC','acrylic'],
-    'Rubber':['Rubber'],
-    'Sealants_adhesives_coatings':['Sealants_adhesives_coatings'],
-    'Soil':['Soil'],
-    'Vinyl':['Vinyl'],
-    'Zinc':['Zinc'],
-    'Uncategorised':['Uncategorised']
-}
-# TODO load from data/file.json
 # TODO add pattern for steel /S\d\d\d/gi and concrete /C\d\d\/\d\d/gi
 
 # to lower case:

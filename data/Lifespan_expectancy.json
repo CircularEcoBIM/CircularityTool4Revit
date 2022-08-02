@@ -1,0 +1,11 @@
+{
+    "Doors": "30",
+    "Windows": "25",
+    "Floors": "50",
+    "Structural Columns": "50",
+    "Structural Framing": "50",
+    "Walls": "50",
+    "Ceilings": "25",
+    "Columns": "50",
+    "Structural Foundations": "50"
+}
