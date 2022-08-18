@@ -5,7 +5,7 @@
     "Glass":["Glass","Glazing"],
     "Stone":["Stone","granite","limestone","marble ","slate"],
     "Ceramic":["Ceramic","Tile"],
-    "Aluminium":["Aluminium","Aluminum"],
+    "Aluminium":["Aluminium","Aluminum","Alu"],
     "Cement":["Cement","screed","fibre cement","CEM","Portland"],
     "AggregateSand":["Aggregate","Sand"],
     "Insulation":["Insulation","XPS","EPS","ETICS"],
@@ -17,8 +17,6 @@
     "Iron":["Iron"],
     "Lime":["Lime"],
     "Linoleum":["Linoleum"],
-    "MandE":["MandE"],
-    "Misc":["Misc"],
     "Paint":["Paint"],
     "Paper":["Paper","cardboard"],
     "Plaster":["Plaster","Gypsum","gypsumboard","plasterboard"],
@@ -28,5 +26,7 @@
     "Soil":["Soil"],
     "Vinyl":["Vinyl"],
     "Zinc":["Zinc"],
+	"MandE":["MandE"],
+    "Misc":["Misc"],
     "Uncategorised":["Uncategorised"]
 }
