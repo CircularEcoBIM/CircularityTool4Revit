@@ -193,12 +193,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "[\n\"Area\",\n\"Volume\",\n\"Product Circularity Indicator\"\n];\n//\"Length\",\n//\"Thickness\",",
+      "Code": "[\n\"Area\",\n\"Volume\",\n\"System Circularity Indicator\"\n];\n//\"Length\",\n//\"Thickness\",",
       "Id": "c8ed13ba2875432e9eac22f3503a2390",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "527612481d7d46df8b88e176d732620e",
+          "Id": "42507c8025ce47e1b764e1892e202bbd",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -2204,14 +2204,14 @@
       "Id": "80e7e7a0d8c94f5d85069719fb9d0481"
     },
     {
-      "Start": "527612481d7d46df8b88e176d732620e",
+      "Start": "42507c8025ce47e1b764e1892e202bbd",
       "End": "53cc344b6c94414d8071657defbeadbd",
-      "Id": "ab194a35fb504a77a473718039c4238f"
+      "Id": "de4c6ecf729c4b70893ac03f81fb807b"
     },
     {
-      "Start": "527612481d7d46df8b88e176d732620e",
+      "Start": "42507c8025ce47e1b764e1892e202bbd",
       "End": "84ca51fed9f24bf5ae175e9bd5849f4c",
-      "Id": "98f86687f8194223ba338d573798cb5f"
+      "Id": "03234eaa72904fff8b0ecc22be0cb955"
     },
     {
       "Start": "37df92b89abd4afdb59314e395e44f49",
@@ -2881,8 +2881,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -1435.0765442689697,
-        "Y": 3571.4015830102344
+        "X": -1421.1022659423568,
+        "Y": 3602.5749731234473
       },
       {
         "ShowGeometry": false,
@@ -2961,8 +2961,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -439.20757445225991,
-        "Y": 2872.0731553279361
+        "X": -429.497586830787,
+        "Y": 2873.0441540900833
       },
       {
         "ShowGeometry": false,
@@ -3011,8 +3011,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -79.784679121330328,
-        "Y": 3311.85432851842
+        "X": -59.275280437106176,
+        "Y": 3321.5058102521725
       },
       {
         "ShowGeometry": false,
@@ -3021,8 +3021,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 3609.1638270672665,
-        "Y": 3698.0619961637894
+        "X": 3656.8541385131807,
+        "Y": 3707.3927092727727
       },
       {
         "ShowGeometry": false,
@@ -3101,8 +3101,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2150.5252761568336,
-        "Y": 3501.9774114597576
+        "X": 2149.7164242344516,
+        "Y": 3501.168559537376
       },
       {
         "ShowGeometry": false,
@@ -3241,8 +3241,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 3397.725117539695,
-        "Y": 3708.4366221126993
+        "X": 3442.446127924135,
+        "Y": 3712.2918816285996
       },
       {
         "ShowGeometry": true,
@@ -3280,10 +3280,10 @@
         "Left": -2078.8723245186138,
         "Top": 2617.6579862839735,
         "Width": 1783.2810337839255,
-        "Height": 1073.5435967262611,
+        "Height": 1104.716986839474,
         "FontSize": 30.0,
         "InitialTop": 2663.6579862839735,
-        "InitialHeight": 1052.7435967262609,
+        "InitialHeight": 1083.9169868394738,
         "TextblockHeight": 36.0,
         "Background": "#FFC1D676"
       },
@@ -3385,7 +3385,7 @@
         ],
         "Left": 2748.8010261789759,
         "Top": 3632.0769845555396,
-        "Width": 1159.9628008882905,
+        "Width": 1057.2531123342046,
         "Height": 282.17801662546026,
         "FontSize": 36.0,
         "InitialTop": 3685.2769845555395,
@@ -3402,13 +3402,13 @@
           "deaa43ab6ac144d886cc7c5bf43eaf32",
           "eab9e2406a4840ecbb8c1ce04e93f4fd"
         ],
-        "Left": -89.784679121330328,
+        "Left": -75.178235934133227,
         "Top": 3218.389323105006,
-        "Width": 740.85866343938869,
+        "Width": 726.25222025219159,
         "Height": 344.99059152255177,
         "FontSize": 36.0,
         "InitialTop": 3271.5893231050059,
-        "InitialHeight": 339.01480871733429,
+        "InitialHeight": 318.59059152255213,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -3423,9 +3423,9 @@
           "a5050d2dcf58446fb55756d54c79cb58",
           "46e6393103f84a1db1950d47351086cd"
         ],
-        "Left": 2140.5252761568336,
+        "Left": 2139.7164242344516,
         "Top": 3155.2298506053917,
-        "Width": 519.08965165355585,
+        "Width": 519.89850357593787,
         "Height": 536.21265823791782,
         "FontSize": 30.0,
         "InitialTop": 3201.2298506053917,
@@ -3487,8 +3487,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -1476.8486463687445,
-    "Y": -2067.0296038889264,
-    "Zoom": 0.71939985932535222
+    "X": 463.48592758156292,
+    "Y": 79.920002758637168,
+    "Zoom": 0.099627014977495154
   }
 }
