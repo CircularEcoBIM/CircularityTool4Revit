@@ -28,7 +28,7 @@
       "Id": "25eacc23464b499d9f2dc4a6ceb903c7",
       "Name": "Include the foundations?",
       "Type": "boolean",
-      "Value": "false",
+      "Value": "true",
       "Description": "Selection between a true and false."
     }
   ],
@@ -284,7 +284,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
       "NodeType": "BooleanInputNode",
-      "InputValue": false,
+      "InputValue": true,
       "Id": "25eacc23464b499d9f2dc4a6ceb903c7",
       "Inputs": [],
       "Outputs": [
@@ -720,27 +720,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
-      "ConcreteType": "DSRevitNodesUI.FillPatterns, DSRevitNodesUI",
-      "SelectedIndex": 1,
-      "SelectedString": "<Solid fill>",
-      "NodeType": "ExtensionNode",
-      "Id": "ef30222347f0467a871d4f253870c1c7",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "9ba90c6450cd4bbe95183943478053ee",
-          "Name": "FillPattern",
-          "Description": "The selected FillPattern",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "All available fill patterns."
     },
     {
       "ConcreteType": "CoreNodeModels.Logic.If, CoreNodeModels",
@@ -1407,7 +1386,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FillPatterns, DSRevitNodesUI",
-      "SelectedIndex": 1,
+      "SelectedIndex": 0,
       "SelectedString": "<Solid fill>",
       "NodeType": "ExtensionNode",
       "Id": "ec8a9bacea644086b236ea96a18d9a38",
@@ -1525,12 +1504,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "[\nColor.ByARGB(255, 255, 237, 0),\nColor.ByARGB(255, 0, 189, 124)\n];\n[\n0.00,\n1.00\n];",
+      "Code": "[\nColor.ByARGB(255, 255, 237, 0),\nColor.ByARGB(255, 0, 189, 124)\n];\n[\n1.00,\n0.00\n];",
       "Id": "61e9a48e5fb64fd0a6bfb3794dcd667b",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "81708a40a402469aa406f9c9793906ab",
+          "Id": "40892890861046788ac4473056068670",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -1539,7 +1518,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "944506db763c4d27acc22d56d9e4e01c",
+          "Id": "f8d7f1a570234e7397350e9fa10cea1d",
           "Name": "",
           "Description": "Value of expression at line 5",
           "UsingDefaultValue": false,
@@ -1691,7 +1670,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FillPatterns, DSRevitNodesUI",
-      "SelectedIndex": 1,
+      "SelectedIndex": 0,
       "SelectedString": "<Solid fill>",
       "NodeType": "ExtensionNode",
       "Id": "75ed1080a95343e6911f0dadb4f58ad2",
@@ -2015,12 +1994,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "[\nColor.ByARGB(255, 205, 187, 0),\nColor.ByARGB(255, 0, 139, 94)\n];\n[\n0.00,\n1.00\n];",
+      "Code": "[\nColor.ByARGB(255, 205, 187, 0),\nColor.ByARGB(255, 0, 139, 94)\n];\n[\n1.00,\n0.00\n];",
       "Id": "af085afb7c3b401aab3707c9d58ea201",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "835d34c8e5484d24b98b06be0e33e9b1",
+          "Id": "e12767d3684c480cbebe724f40aef075",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -2029,7 +2008,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "6eee1a07ac3c4894905f34c12d8bbd6a",
+          "Id": "678766fe8e4e44bfa2e895ec365226a3",
           "Name": "",
           "Description": "Value of expression at line 5",
           "UsingDefaultValue": false,
@@ -2087,6 +2066,65 @@
       ],
       "Replication": "Disabled",
       "Description": "Get a color given a color range."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"<Solid fill>\";",
+      "Id": "956434667e934c019c2fe33c78996d94",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "4fc7b278c1b44cff8de9ea446ffab278",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.FillPatternElement.GetByName@string,string",
+      "Id": "1c2d587c3cdc4d9b8e2ae2878246dbbf",
+      "Inputs": [
+        {
+          "Id": "64c44d56e4294a7abd186aa56aa6c28a",
+          "Name": "name",
+          "Description": "Name of the Fill Pattern.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "93ce96ec0dfb49469ce74a13dfd47d28",
+          "Name": "fillPatternTarget",
+          "Description": "Target Fill pattern. Fill Patterns can be either \"Drafting\" or \"Modeling\". Default is \"Drafting\".\n\nstring\nDefault value : \"Drafting\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bedf14685cef42fc9bf80b4f6c5433fa",
+          "Name": "FillPattern",
+          "Description": "Filled Pattern Element.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Fill Pattern Element by Name and Target Type.\n\nFillPatternElement.GetByName (name: string, fillPatternTarget: string = \"Drafting\"): FillPatternElement"
     }
   ],
   "Connectors": [
@@ -2196,11 +2234,6 @@
       "Id": "ab02672ac7e04b47af7e373aef41f5fe"
     },
     {
-      "Start": "9ba90c6450cd4bbe95183943478053ee",
-      "End": "0193fd246a984736ba730c8addf211d0",
-      "Id": "37bdb40ce2a64bd6898b283c5078de17"
-    },
-    {
       "Start": "6cb7190a963b4b03aff3b5db4fce3fea",
       "End": "82469bed17514ac3a1d12f38a53cf924",
       "Id": "ef24586ce1354c0bbdde97f1a9a3c177"
@@ -2306,14 +2339,14 @@
       "Id": "2efda006df9b473c9685d79cb2a9d48e"
     },
     {
-      "Start": "81708a40a402469aa406f9c9793906ab",
+      "Start": "40892890861046788ac4473056068670",
       "End": "4c44b95b83214e1d9880717ed1065c7f",
-      "Id": "d22dfca158fd4ea2a53f778d0c9cbf00"
+      "Id": "3a7b04099aa64792825495f737d94486"
     },
     {
-      "Start": "944506db763c4d27acc22d56d9e4e01c",
+      "Start": "f8d7f1a570234e7397350e9fa10cea1d",
       "End": "119e0e6709be4391adbdde00bb2a0644",
-      "Id": "af538e8bfe5043709aca53dc5535b834"
+      "Id": "fc546fa244fe40c1ad3415481d167ab4"
     },
     {
       "Start": "97324ad1838749c38dc2d30851dc216b",
@@ -2391,19 +2424,29 @@
       "Id": "dfbbd57f150a4b338c78cce4485a7c21"
     },
     {
-      "Start": "835d34c8e5484d24b98b06be0e33e9b1",
+      "Start": "e12767d3684c480cbebe724f40aef075",
       "End": "b4180185135847b6ba4869dc1f358e0f",
-      "Id": "6fad954577f74b5886539a77572da164"
+      "Id": "115ed3e7afed47119eddb559c5be2a8e"
     },
     {
-      "Start": "6eee1a07ac3c4894905f34c12d8bbd6a",
+      "Start": "678766fe8e4e44bfa2e895ec365226a3",
       "End": "f484588b0fc74b988743e5d51d09459a",
-      "Id": "f19e41ea089b418d872ffc3b1fb00f88"
+      "Id": "6d2e7694427b40c59cfaadba32f850b6"
     },
     {
       "Start": "b784dbf73b1e4cd5b432f86a7ca0bc77",
       "End": "1b019f3a283e4eeb87e82a0dee8870b8",
       "Id": "dc693a16346a4c088d7cffcd12577b8d"
+    },
+    {
+      "Start": "4fc7b278c1b44cff8de9ea446ffab278",
+      "End": "64c44d56e4294a7abd186aa56aa6c28a",
+      "Id": "de6aa0f0d1e143cd8e74d732eb8bf1cd"
+    },
+    {
+      "Start": "bedf14685cef42fc9bf80b4f6c5433fa",
+      "End": "0193fd246a984736ba730c8addf211d0",
+      "Id": "67c4d5754cc54eca814bef467c386165"
     }
   ],
   "Dependencies": [],
@@ -2558,8 +2601,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2875.8066382686848,
-        "Y": 3144.5624465931642
+        "X": 2866.1507732812647,
+        "Y": 3139.7345140994544
       },
       {
         "ShowGeometry": false,
@@ -2568,8 +2611,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2501.9940651107145,
-        "Y": 3243.3755361042045
+        "X": 2492.3382001232944,
+        "Y": 3238.5476036104947
       },
       {
         "ShowGeometry": false,
@@ -2598,8 +2641,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1019.3890499729914,
-        "Y": 3366.4403379801911
+        "X": 1009.7331849855714,
+        "Y": 3361.6124054864813
       },
       {
         "ShowGeometry": false,
@@ -2608,18 +2651,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 870.41285022816021,
-        "Y": 3450.3088253513133
-      },
-      {
-        "ShowGeometry": false,
-        "Name": "Fill Patterns",
-        "Id": "ef30222347f0467a871d4f253870c1c7",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 2233.7339844440949,
-        "Y": 3545.0913450270446
+        "X": 860.75698524074,
+        "Y": 3445.4808928576035
       },
       {
         "ShowGeometry": false,
@@ -2768,8 +2801,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1690.2730041803675,
-        "Y": 3782.4200126916448
+        "X": 1691.1496021061985,
+        "Y": 3877.650477873819
       },
       {
         "ShowGeometry": false,
@@ -2778,8 +2811,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1287.9288490345548,
-        "Y": 3843.355469153938
+        "X": 1288.8054469603858,
+        "Y": 3938.5859343361121
       },
       {
         "ShowGeometry": false,
@@ -2788,8 +2821,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1001.4191141409017,
-        "Y": 4003.1926868900782
+        "X": 1002.2957120667327,
+        "Y": 4098.4231520722515
       },
       {
         "ShowGeometry": false,
@@ -2808,8 +2841,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2037.1703722703267,
-        "Y": 3187.2409206952007
+        "X": 2027.5145072829068,
+        "Y": 3182.4129882014909
       },
       {
         "ShowGeometry": false,
@@ -2818,8 +2851,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": true,
-        "X": 846.49136919972716,
-        "Y": 3007.7274823323496
+        "X": 836.83550421230711,
+        "Y": 3002.89954983864
       },
       {
         "ShowGeometry": false,
@@ -2828,8 +2861,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1544.0812287745239,
-        "Y": 3011.5673512793442
+        "X": 1534.4253637871038,
+        "Y": 3006.7394187856344
       },
       {
         "ShowGeometry": false,
@@ -2928,8 +2961,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 850.18716118401653,
-        "Y": 3780.6233012420639
+        "X": 851.06375910984752,
+        "Y": 3875.8537664242381
       },
       {
         "ShowGeometry": false,
@@ -2938,8 +2971,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 870.17136737118119,
-        "Y": 3900.1975003871694
+        "X": 871.04796529701207,
+        "Y": 3995.4279655693435
       },
       {
         "ShowGeometry": false,
@@ -2948,8 +2981,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1541.0854056218723,
-        "Y": 3428.1331237093095
+        "X": 1531.4295406344522,
+        "Y": 3423.3051912155997
       },
       {
         "ShowGeometry": false,
@@ -2958,8 +2991,28 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2035.2441051763954,
-        "Y": 3344.974126916959
+        "X": 2025.5882401889753,
+        "Y": 3340.1461944232492
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "956434667e934c019c2fe33c78996d94",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1954.2003356102314,
+        "Y": 3513.6019465911036
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "FillPatternElement.GetByName",
+        "Id": "1c2d587c3cdc4d9b8e2ae2878246dbbf",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2169.3508438317212,
+        "Y": 3508.8502592664336
       }
     ],
     "Annotations": [
@@ -3024,31 +3077,6 @@
         "Background": "#FFC1D676"
       },
       {
-        "Id": "f33bb93682db4564901fd87259286383",
-        "Title": "Color in view by indicator",
-        "Nodes": [
-          "6c003cddedf54addb7917ab265897037",
-          "e942200b34f94aa09220be658caf3378",
-          "b83554d435b24ae796bf2f93deaecd29",
-          "043637e005214716a470701dc586a1de",
-          "ef30222347f0467a871d4f253870c1c7",
-          "2fd0f3f7250b4582bbf26a253d23a3aa",
-          "9e9d7f360f3d49d3a8f6e5378984a18e",
-          "61e9a48e5fb64fd0a6bfb3794dcd667b",
-          "39de3fc5c57340d28b60a37e8d650d6e",
-          "af085afb7c3b401aab3707c9d58ea201"
-        ],
-        "Left": 836.49136919972716,
-        "Top": 2954.52748233235,
-        "Width": 2274.1152690689578,
-        "Height": 688.64805377185485,
-        "FontSize": 36.0,
-        "InitialTop": 3007.7274823323496,
-        "InitialHeight": 682.363862694695,
-        "TextblockHeight": 43.2,
-        "Background": "#FF48B9FF"
-      },
-      {
         "Id": "dbe2061b60364034b387283a62cc811a",
         "Title": "<Click here to edit the group title>",
         "Nodes": [
@@ -3080,13 +3108,13 @@
           "a6ee9687b4cc4f8d831acea822373396",
           "8e7f30b34d7a4ecfa1b58535fb1feec7"
         ],
-        "Left": 840.18716118401653,
-        "Top": 3727.4233012420641,
+        "Left": 841.06375910984752,
+        "Top": 3822.6537664242383,
         "Width": 1084.8858429963509,
         "Height": 515.7321679118736,
         "FontSize": 36.0,
-        "InitialTop": 3780.6233012420639,
-        "InitialHeight": 619.18545074260965,
+        "InitialTop": 3875.8537664242381,
+        "InitialHeight": 367.56938564801339,
         "TextblockHeight": 43.2,
         "Background": "#FF48B9FF"
       },
@@ -3139,6 +3167,32 @@
         "Background": "#FF48B9FF"
       },
       {
+        "Id": "85c2fbeb4f484a0985186459d374fd51",
+        "Title": "Color in view by indicator",
+        "Nodes": [
+          "6c003cddedf54addb7917ab265897037",
+          "e942200b34f94aa09220be658caf3378",
+          "b83554d435b24ae796bf2f93deaecd29",
+          "043637e005214716a470701dc586a1de",
+          "2fd0f3f7250b4582bbf26a253d23a3aa",
+          "9e9d7f360f3d49d3a8f6e5378984a18e",
+          "61e9a48e5fb64fd0a6bfb3794dcd667b",
+          "af085afb7c3b401aab3707c9d58ea201",
+          "39de3fc5c57340d28b60a37e8d650d6e",
+          "956434667e934c019c2fe33c78996d94",
+          "1c2d587c3cdc4d9b8e2ae2878246dbbf"
+        ],
+        "Left": 826.83550421230711,
+        "Top": 2949.69954983864,
+        "Width": 2274.1152690689578,
+        "Height": 688.64805377185485,
+        "FontSize": 36.0,
+        "InitialTop": 3002.89954983864,
+        "InitialHeight": 655.70239675246376,
+        "TextblockHeight": 43.2,
+        "Background": "#FF48B9FF"
+      },
+      {
         "Id": "443502cd3e25449db7eaf9af9c7925ab",
         "Title": "TBC...",
         "Nodes": [],
@@ -3167,8 +3221,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -174.9948144102857,
-    "Y": -1052.8708643537339,
-    "Zoom": 0.41858876245060173
+    "X": -1288.9371232602189,
+    "Y": -2332.5695474679169,
+    "Zoom": 0.84399597289268169
   }
 }
