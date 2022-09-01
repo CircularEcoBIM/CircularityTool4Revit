@@ -1,5 +1,5 @@
-import json
 
+import json
 
 parameters = IN[0]
 # parameters = [[3,2,0,1],[2,3,1,0],[4,4,2,0]]

@@ -12,7 +12,7 @@
 		"HHV": "Higher Heating Value [MJ]",
 		"M_B": "Fraction of mass of eligible biological material (end of life)",
 		"E_C": "Efficiency of the recycling process used for recycling the product at the end of its use phase",
-		"E_F": "Eficiency of the recycling process used to produce the recycled feedstock",
+		"E_F": "Eficiency of the recycling process used to produce the recycled feedstock"
 		},
 	"Steel": {
 		"Density": 7850,
