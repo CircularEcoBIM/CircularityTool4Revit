@@ -1313,7 +1313,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FillPatterns, DSRevitNodesUI",
-      "SelectedIndex": 1,
+      "SelectedIndex": 0,
       "SelectedString": "<Solid fill>",
       "NodeType": "ExtensionNode",
       "Id": "ec8a9bacea644086b236ea96a18d9a38",
@@ -1597,7 +1597,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FillPatterns, DSRevitNodesUI",
-      "SelectedIndex": 1,
+      "SelectedIndex": 0,
       "SelectedString": "<Solid fill>",
       "NodeType": "ExtensionNode",
       "Id": "75ed1080a95343e6911f0dadb4f58ad2",
@@ -5014,7 +5014,7 @@
         "Height": 524.45700406416063,
         "FontSize": 36.0,
         "InitialTop": 3526.1041900398063,
-        "InitialHeight": 494.92486548359147,
+        "InitialHeight": 514.057004064161,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -5034,7 +5034,7 @@
         "Height": 515.73216791187406,
         "FontSize": 36.0,
         "InitialTop": 4819.8623014052546,
-        "InitialHeight": 367.56938564801339,
+        "InitialHeight": 367.56938564801294,
         "TextblockHeight": 43.2,
         "Background": "#FF48B9FF"
       },
@@ -5055,7 +5055,7 @@
         "Left": -2443.5839020341682,
         "Top": 3749.9223442504835,
         "Width": 1458.7954237398023,
-        "Height": 845.36630352907014,
+        "Height": 579.76630352906977,
         "FontSize": 36.0,
         "InitialTop": 3803.1223442504834,
         "InitialHeight": 560.56630352907,
@@ -5137,7 +5137,7 @@
         "Height": 1494.6144514919665,
         "FontSize": 36.0,
         "InitialTop": 2853.126309116557,
-        "InitialHeight": 650.55344120034351,
+        "InitialHeight": 1468.2144514919669,
         "TextblockHeight": 43.2,
         "Background": "#FF48B9FF"
       },
@@ -5154,7 +5154,7 @@
         "Height": 284.21215816896984,
         "FontSize": 36.0,
         "InitialTop": 4432.4323699115612,
-        "InitialHeight": 217.81215816896975,
+        "InitialHeight": 230.61215816897038,
         "TextblockHeight": 86.4,
         "Background": "#FFFF7BAC"
       },
@@ -5187,8 +5187,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 341.75822395092223,
-    "Y": -1189.3958841041017,
-    "Zoom": 0.39252023124461954
+    "X": 654.04760379320646,
+    "Y": -34.988638699617667,
+    "Zoom": 0.073216283219833145
   }
 }

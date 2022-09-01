@@ -2499,25 +2499,6 @@
       "Description": "Get the Element Id for this element\n\nElement.Id: int"
     },
     {
-      "ConcreteType": "DSRevitNodesUI.ElementsInView, DSRevitNodesUI",
-      "NodeType": "ExtensionNode",
-      "Id": "ddb1c58df7f24d16beb01bab90242d5b",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "67e3dbb04ed04fa5b255805056d629cc",
-          "Name": "elements",
-          "Description": "All visible elements in the active view.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Get all the elements which are visible in the active view."
-    },
-    {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
       "FunctionSignature": "DSCore.Color.ByARGB@int,int,int,int",
@@ -4141,35 +4122,6 @@
       "Description": "Runs an embedded Python script."
     },
     {
-      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "4421f5d06cc640fe8362df58623a65df",
-      "Inputs": [
-        {
-          "Id": "16f2e59fb42140df9b800436fea9404d",
-          "Name": "",
-          "Description": "Node to evaluate.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "331c7f706f7d4b26bde9245fac9199ea",
-          "Name": "",
-          "Description": "Watch contents.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Visualize the output of node."
-    },
-    {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
       "FunctionSignature": "Revit.Elements.FillPatternElement.GetByName@string,string",
@@ -4227,6 +4179,25 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsInView, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "c66e079dc3c3491086eaa13c9b330a6b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e7f65b535bd549a2be898ce7f01ebc62",
+          "Name": "elements",
+          "Description": "All visible elements in the active view.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all the elements which are visible in the active view."
     }
   ],
   "Connectors": [
@@ -4339,11 +4310,6 @@
       "Start": "c0759e7ceb5a46c08d3ccdb67b5a533d",
       "End": "0ca8a2cdfe5b4c67939fca2670ca4770",
       "Id": "7d0518b13db9429a8ed4e588e392df40"
-    },
-    {
-      "Start": "c0759e7ceb5a46c08d3ccdb67b5a533d",
-      "End": "16f2e59fb42140df9b800436fea9404d",
-      "Id": "06364b584db84358ad77bc744b80a392"
     },
     {
       "Start": "90e83b8bbf3f495d8c15bdecff51ae42",
@@ -4716,11 +4682,6 @@
       "Id": "06bb43e1d66c4bd88aa19566ad86e3f1"
     },
     {
-      "Start": "67e3dbb04ed04fa5b255805056d629cc",
-      "End": "6fe365add9fc46178b0c2eab24214c62",
-      "Id": "5ffc738fc9dc4e3d8dbed062a8b21f65"
-    },
-    {
       "Start": "e15fddde7ebe48b58ff38c0ea301e33b",
       "End": "f6a3e0549edb4f3289832c0941255195",
       "Id": "653b774df6d846dface10f4cd4b77295"
@@ -4974,6 +4935,11 @@
       "Start": "4873304a169a4ea09b4120bd1bc27333",
       "End": "809dcb72e1ce432594f81759450fd6cd",
       "Id": "3e65e2cea6334925b6788b6cabd50259"
+    },
+    {
+      "Start": "e7f65b535bd549a2be898ce7f01ebc62",
+      "End": "6fe365add9fc46178b0c2eab24214c62",
+      "Id": "e1497ffaa84744cd8c50c2342e3aef4b"
     }
   ],
   "Dependencies": [],
@@ -5688,18 +5654,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 7747.56690671238,
-        "Y": 1986.0835068147614
-      },
-      {
-        "ShowGeometry": false,
-        "Name": "All Elements In Active View",
-        "Id": "ddb1c58df7f24d16beb01bab90242d5b",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 7497.2746818592595,
-        "Y": 1985.9145283709711
+        "X": 7637.8539039171292,
+        "Y": 2011.160764596533
       },
       {
         "ShowGeometry": false,
@@ -5808,8 +5764,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9204.82327509708,
-        "Y": 2054.814682788347
+        "X": 9127.7298658607779,
+        "Y": 2092.8027395134818
       },
       {
         "ShowGeometry": false,
@@ -5818,8 +5774,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9466.9823492839623,
-        "Y": 1982.1382856105215
+        "X": 9389.88894004766,
+        "Y": 2020.1263423356563
       },
       {
         "ShowGeometry": false,
@@ -5828,8 +5784,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 9699.6265286829966,
-        "Y": 1925.9150363306658
+        "X": 9622.5331194466944,
+        "Y": 1963.9030930558006
       },
       {
         "ShowGeometry": false,
@@ -5949,7 +5905,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 7576.81297050434,
-        "Y": 256.16905725068267
+        "Y": 242.43439958389121
       },
       {
         "ShowGeometry": false,
@@ -6083,16 +6039,6 @@
       },
       {
         "ShowGeometry": false,
-        "Name": "Watch",
-        "Id": "4421f5d06cc640fe8362df58623a65df",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 5551.7729321335964,
-        "Y": 331.49563687915941
-      },
-      {
-        "ShowGeometry": false,
         "Name": "FillPatternElement.GetByName",
         "Id": "cd334ab8ace143e2a3b7024d38b1675d",
         "IsSetAsInput": false,
@@ -6110,6 +6056,16 @@
         "Excluded": false,
         "X": 7633.6983744307581,
         "Y": 1275.0656170425691
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "All Elements In Active View",
+        "Id": "c66e079dc3c3491086eaa13c9b330a6b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 7410.523138270185,
+        "Y": 2025.4776962951876
       }
     ],
     "Annotations": [
@@ -6320,7 +6276,7 @@
         "Height": 571.214130713169,
         "FontSize": 36.0,
         "InitialTop": 1893.1924636207068,
-        "InitialHeight": 663.29967604326885,
+        "InitialHeight": 570.414130713169,
         "TextblockHeight": 43.2,
         "Background": "#FF48B9FF"
       },
@@ -6363,18 +6319,18 @@
         "Id": "9b3b7724712f4487bba91c25e1e3c876",
         "Title": "Take all other elements from the view",
         "Nodes": [
-          "ddb1c58df7f24d16beb01bab90242d5b",
           "108a906accc947d4ba84b6c9ff07dc51",
           "99048010885d4bbdbb38d4f5a3c2affe",
           "cb2353f9974f41549abbf384e96b8832",
           "574b836eaa194f4c9fc533add3367aef",
           "e2a9c40826d749ef82f537acccecb83f",
           "0eee6ab6b46443a0b096f6e8b76d0533",
-          "b21f5dba2c3748419dcb7db55fc5d174"
+          "b21f5dba2c3748419dcb7db55fc5d174",
+          "c66e079dc3c3491086eaa13c9b330a6b"
         ],
-        "Left": 7487.2746818592595,
+        "Left": 7400.523138270185,
         "Top": 1578.0969512174611,
-        "Width": 1454.0662490192672,
+        "Width": 1540.8177926083417,
         "Height": 845.36630352906968,
         "FontSize": 36.0,
         "InitialTop": 1631.2969512174611,
@@ -6390,12 +6346,12 @@
           "d13ca047dddc4ec1829721fd514c9047",
           "946b0da3f79c48dba3fdebf31c80f6b4"
         ],
-        "Left": 9194.82327509708,
-        "Top": 1872.7150363306657,
+        "Left": 9117.7298658607779,
+        "Top": 1910.7030930558005,
         "Width": 686.00325358591726,
         "Height": 274.69964645768118,
         "FontSize": 36.0,
-        "InitialTop": 1925.9150363306658,
+        "InitialTop": 1963.9030930558006,
         "InitialHeight": 273.89964645768123,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
@@ -6411,11 +6367,11 @@
           "38f2e3e0c550432fae7681b7bc7fe507"
         ],
         "Left": 7566.81297050434,
-        "Top": 202.96905725068268,
+        "Top": 189.23439958389122,
         "Width": 956.93753567220756,
-        "Height": 336.55775303517566,
+        "Height": 350.29241070196713,
         "FontSize": 36.0,
-        "InitialTop": 256.16905725068267,
+        "InitialTop": 242.43439958389121,
         "InitialHeight": 335.75775303517565,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
@@ -6449,8 +6405,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -8473.0081009686728,
-    "Y": -1060.9175217623929,
-    "Zoom": 1.1288453558954767
+    "X": -2469.4492360272488,
+    "Y": -141.5879033967812,
+    "Zoom": 0.40725595565716766
   }
 }
