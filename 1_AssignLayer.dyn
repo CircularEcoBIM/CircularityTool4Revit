@@ -2401,7 +2401,7 @@
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
       "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nlist_A = IN[0]\r\nlist_B = IN[1]\r\n\r\ncommon = set(list_B).intersection(list_A)\r\ndifference = set(list_B) - set(list_A)\r\n\r\nOUT = [common, difference]",
-      "Engine": "IronPython2",
+      "Engine": "CPython3",
       "VariableInputPorts": true,
       "Id": "cb2353f9974f41549abbf384e96b8832",
       "Inputs": [
@@ -5634,8 +5634,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 8030.41414565077,
-        "Y": 1889.9072225430416
+        "X": 7992.3416047821684,
+        "Y": 1887.1483427699545
       },
       {
         "ShowGeometry": false,
@@ -6331,7 +6331,7 @@
         "Left": 7400.523138270185,
         "Top": 1578.0969512174611,
         "Width": 1540.8177926083417,
-        "Height": 845.36630352906968,
+        "Height": 560.56630352907,
         "FontSize": 36.0,
         "InitialTop": 1631.2969512174611,
         "InitialHeight": 560.56630352906973,
@@ -6372,7 +6372,7 @@
         "Height": 350.29241070196713,
         "FontSize": 36.0,
         "InitialTop": 242.43439958389121,
-        "InitialHeight": 335.75775303517565,
+        "InitialHeight": 349.49241070196712,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -6405,8 +6405,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -2469.4492360272488,
-    "Y": -141.5879033967812,
-    "Zoom": 0.40725595565716766
+    "X": -701.7830098600341,
+    "Y": -440.70439205094954,
+    "Zoom": 0.65030776778652133
   }
 }
