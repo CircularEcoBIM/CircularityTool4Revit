@@ -6,7 +6,9 @@ The Circular EcoBIM project aims to create a set of BIM based tools to enable a 
 
 Read more at https://circularecobim.eu/
 
-## Instructions 
+# Instructions 
+
+## Preparing the data 
 
 ### 1.	Prerequisites:
 - Revit 2022+
@@ -21,6 +23,8 @@ Read more at https://circularecobim.eu/
     <img src="https://user-images.githubusercontent.com/22922395/188668340-e1054290-333c-4f04-b141-241dad926040.png" alt="drawing" width="500"/>    
 -	Point to the template/RevitParameterTemplate.rvt file.
 -	Select all three schedules from that file.
+    
+    <img src="https://user-images.githubusercontent.com/22922395/188679958-febc5294-6a84-49d9-9e19-6950cfd3dee9.png" alt="drawing" width="500"/>    
 -	A schedule (table) will appear, but you can close that tab and go back to the desired 3d view.
 
 Now all the required Revit categories in your model will have appropriate parameters.
@@ -66,18 +70,20 @@ Now all the required Revit categories in your model will have appropriate parame
 
 ### 5. Make sure that your Revit model doesn’t contain Model Groups as they deny access to write back values of individual element parameters.
 
-### 6.	In Revit, open Dynamo Player:
+Grops are not preventing the tool from working, but all elements belonging to a group will be omitted in the calculations. You can ungroup existing groups by selecting them and using `Ungroup`
+
+<img src="https://user-images.githubusercontent.com/22922395/188673574-04a0d1f6-c612-484b-bde6-433fd1d9fb1c.png" alt="drawing" width="250"/>
+
+## Using the tool
+### 7. In Revit, open Dynamo Player:
 
 <img src="https://user-images.githubusercontent.com/22922395/188670575-05b20dea-81aa-464f-aa59-dc46e1804c8f.png" alt="drawing" width="600"/>
 
 <img src="https://user-images.githubusercontent.com/22922395/188670587-276174c5-166a-49f8-88d1-3fa494e78d5e.png" alt="drawing" width="250"/>
 
-### 7.	Before running each script you can edit the input values by clicking on Edit inputs:
+Before running each script you can edit the input values by clicking on Edit inputs:
 
 <img src="https://user-images.githubusercontent.com/22922395/188670637-90d616a3-502d-4873-8b1a-f3d8a4c5dfba.png" alt="drawing" width="200"/>
-
-### 8.	Once ready press play button on the Dynamo Player to run the script:  
-<img src="https://user-images.githubusercontent.com/22922395/188670751-f9a35fcf-e4d4-46aa-b0aa-6b34f9e1985f.png" alt="drawing" width="30"/>
 
 Scripts are based on 4 types of data: 
 -	Revit model parameters
@@ -85,5 +91,22 @@ Scripts are based on 4 types of data:
 -	Hardcoded values in the script
 -	External files from the JSON files from /data folder
 
-### 9.	The result, depending on the script, are written back to dedicated Revit parameters, exported to a predefined Excel file or visualized with colors in active Revit view.
+Once ready press play button on the Dynamo Player to run the script:  
+<img src="https://user-images.githubusercontent.com/22922395/188670751-f9a35fcf-e4d4-46aa-b0aa-6b34f9e1985f.png" alt="drawing" width="30"/>
 
+The result, depending on the script, are written back to dedicated Revit parameters, exported to a predefined Excel file or visualized with colors in active Revit view.
+
+### 8. Run the first script
+
+<img src="https://user-images.githubusercontent.com/22922395/188679095-702dcf8a-7784-4286-bde4-a6c48e8fb800.png" alt="drawing" width="300"/>
+
+### 9. Run the first script
+
+<img src="" alt="drawing" width="300"/>
+
+### 10. Run the first script
+
+<img src="" alt="drawing" width="300"/>
+
+# Contact
+In case of questions, please contact NAME@MAIL.COM
