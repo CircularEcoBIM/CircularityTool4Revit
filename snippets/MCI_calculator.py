@@ -1,6 +1,25 @@
 """INPUTS"""
+from operator import iadd
+
+
 C_C, E_R, HHV, M_B, B_C, E_F, E_C, F_S, F_R, F_U, C_R, C_U  = IN[0]
+# C_C, E_R, HHV, M_B, B_C, E_F, E_C, F_S, F_R, F_U, C_R, C_U  = [
+# 	[0, 0, 0],
+# 	[0, 0, 0],
+# 	[0.203, 0.203, 0.203],
+# 	[0.9666, 0.9666, 0.9666],
+# 	[0.45, 0.45, 0.45],
+# 	[0, 0, 0],
+# 	[1, 1, 1],
+# 	[1, 0, 0.12],
+# 	[0, 0, 0],
+# 	[0, 1, 0.88],
+# 	[0, 0, 0],
+# 	[0, 0, 0]
+# 	]
+
 M = IN[1]
+# M = [2627, 2627, 3987]
 
 """CALCULATIONS"""
 
@@ -29,6 +48,8 @@ W_F = []
 for i in range(count):
 	try:
 		W_F.append(M[i]*F_R[i]*(1-E_F[i])/E_F[i])
+	except TypeError:
+		W_F.append(i)
 	except ZeroDivisionError:
 		W_F.append(0)
 
@@ -36,17 +57,17 @@ for i in range(count):
 # W_C = M*(1-E_C)*C_R
 W_C = [M*(1-E_C)*C_R for M,E_C,C_R in zip(M,E_C,C_R)]
 
-# V - Amount of virgin material
-#V = M*(1-F_R-F_U-F_S)
-V = [M*(1-F_R-F_U-F_S) for M,F_R,F_U,F_S in zip(M,F_R,F_U,F_S)]
+# V_F - Amount of virgin material
+#V_F = M*(1-F_R-F_U-F_S)
+V_F = [M*(1-F_R-F_U-F_S) for M,F_R,F_U,F_S in zip(M,F_R,F_U,F_S)]
 
 # W - Amount of unrecoverable waste
 # W = W_0+(W_F+W_C)/2
 W = [W_0+(W_F+W_C)/2 for W_0,W_F,W_C in zip(W_0,W_F,W_C)]
 
 # LFI = Linear Flow Index
-# LFI = (V+W)/(2*M)
-LFI = [(V+W)/(2*M) for V,W,M in zip(V,W,M)]
+# LFI = (V_F+W)/(2*M)
+LFI = [(V_F+W)/(2*M) for V_F,W,M in zip(V_F,W,M)]
 
 # X - Product Utility
 # X = (L_j/L_av_j)*(U_j/U_av_j)
@@ -59,13 +80,6 @@ X = (L/L_av)*(U/U_av)
 # MCI = max(0, 1-(0.9/X*LFI))
 MCI = [1-(0.9/X*LFIj) if X>0.9*LFIj else 0 for LFIj in LFI]
 
-# = [  for  in zip( )]
-# = [  for  in zip( )]
-# = [  for  in zip( )]
-# = [  for  in zip( )]
-# = [  for  in zip( )]
-# = [  for  in zip( )]
-
 
 """RESULTS"""
-OUT = E_E, C_E, W_0, W_F, W_C, V, W, LFI, X, MCI
+OUT = E_E, C_E, W_0, W_F, W_C, V_F, W, LFI, X, MCI

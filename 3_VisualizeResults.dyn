@@ -649,53 +649,6 @@
       "Description": "Allows for DesignScript code to be authored directly"
     },
     {
-      "ConcreteType": "CoreNodeModels.Logic.If, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "bd2efab674af48f59cec78a89c15f5ab",
-      "Inputs": [
-        {
-          "Id": "d28647ecbe764cb98b23988e098742de",
-          "Name": "test",
-          "Description": "Boolean test",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "c25b16e22a4746ca913a8317a6e79d73",
-          "Name": "true",
-          "Description": "Returned if test is true",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "3ec1f717f2e943819262b45b8f3fcdd3",
-          "Name": "false",
-          "Description": "Returned if test is false",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "6cb7190a963b4b03aff3b5db4fce3fea",
-          "Name": "result",
-          "Description": "Result block produced",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Conditional statement"
-    },
-    {
       "ConcreteType": "DSRevitNodesUI.ElementsInView, DSRevitNodesUI",
       "NodeType": "ExtensionNode",
       "Id": "4a233f2d2e1145e7861f1d01ec6d3c19",
@@ -3342,6 +3295,63 @@
       ],
       "Replication": "Auto",
       "Description": "Creates a list containing the given item the given number of times.\n\nList.OfRepeatedItem (item: var[]..[], amount: int): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "result = [trueval, falseval];\nresult[test ? 0 : 1];",
+      "Id": "a3e3f24c24054a689c4fa0ec28445671",
+      "Inputs": [
+        {
+          "Id": "ecbc1b6664b5477a99ad4d6c889d57bb",
+          "Name": "trueval",
+          "Description": "trueval",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "26dcef444c444a46b97a5495726e43b6",
+          "Name": "falseval",
+          "Description": "falseval",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fdbb3e27d552419c92c2149ed9c0487f",
+          "Name": "test",
+          "Description": "test",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b3d9114ffef9437db699680722303a85",
+          "Name": "",
+          "Description": "result",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5b574f97bf1942e2abbdc9b3993d4cf0",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
     }
   ],
   "Connectors": [
@@ -3382,8 +3392,8 @@
     },
     {
       "Start": "254fde9e9c014bc2ab68d22b5aa4f40f",
-      "End": "d28647ecbe764cb98b23988e098742de",
-      "Id": "67b59af1a2df45afb7144cb11271b04d"
+      "End": "fdbb3e27d552419c92c2149ed9c0487f",
+      "Id": "83803c044bb6439a9f911a4351ca1f9c"
     },
     {
       "Start": "23078ed49fb34430a9b3d768eed81faa",
@@ -3397,13 +3407,13 @@
     },
     {
       "Start": "0260d21d6d1447dd80444d49ea3bffbf",
-      "End": "c25b16e22a4746ca913a8317a6e79d73",
-      "Id": "dd7f4738d2f44227a4f0c9c2114c44ed"
+      "End": "ecbc1b6664b5477a99ad4d6c889d57bb",
+      "Id": "8682700f67d0491ea99dc4c1e5399a8f"
     },
     {
       "Start": "d1272189508b416b8143bdd5f96529b4",
-      "End": "3ec1f717f2e943819262b45b8f3fcdd3",
-      "Id": "bd9ba37ea76b4778bf540ea768682f1d"
+      "End": "26dcef444c444a46b97a5495726e43b6",
+      "Id": "aa4d32cab5654e4bb76b69e48343375e"
     },
     {
       "Start": "1cfeff704c10472f8a0005ddf27f684f",
@@ -3429,11 +3439,6 @@
       "Start": "8d260f6fbde04e7a8708bfeb65d9db2f",
       "End": "8137506003f3402b940987809f8c3123",
       "Id": "4d0772fd6ffa45faa6beb0ae318dcd5f"
-    },
-    {
-      "Start": "6cb7190a963b4b03aff3b5db4fce3fea",
-      "End": "82469bed17514ac3a1d12f38a53cf924",
-      "Id": "ef24586ce1354c0bbdde97f1a9a3c177"
     },
     {
       "Start": "87dc33b7b84f4579af034ca44a314b6d",
@@ -3944,6 +3949,11 @@
       "Start": "9efbab4b2d164755a965f080a6d39639",
       "End": "ca072eb1ba7842cc8215ea2af13f80d6",
       "Id": "5424a3f7bcb14c90945254edb217d5e3"
+    },
+    {
+      "Start": "5b574f97bf1942e2abbdc9b3993d4cf0",
+      "End": "82469bed17514ac3a1d12f38a53cf924",
+      "Id": "424eaf578fc947628c5c61665ef7a4fd"
     }
   ],
   "Dependencies": [],
@@ -4058,8 +4068,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -4228.2483076666931,
-        "Y": 3792.6738089686978
+        "X": -4239.9190159878435,
+        "Y": 3893.1433849507812
       },
       {
         "ShowGeometry": false,
@@ -4088,8 +4098,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -4101.1502808624446,
-        "Y": 3872.4250549571275
+        "X": -4112.8209891835959,
+        "Y": 3786.1632978007929
       },
       {
         "ShowGeometry": false,
@@ -4130,16 +4140,6 @@
         "Excluded": false,
         "X": -768.36161939138367,
         "Y": 3736.2133078305114
-      },
-      {
-        "ShowGeometry": false,
-        "Name": "If",
-        "Id": "bd2efab674af48f59cec78a89c15f5ab",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -3835.5936132309039,
-        "Y": 3770.7609163365382
       },
       {
         "ShowGeometry": false,
@@ -4800,6 +4800,16 @@
         "Excluded": false,
         "X": 3098.2375208688859,
         "Y": 3831.0226126473326
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "a3e3f24c24054a689c4fa0ec28445671",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -3970.0903055361773,
+        "Y": 3810.4786695234129
       }
     ],
     "Annotations": [
@@ -4851,12 +4861,12 @@
           "e21726ee3c984948acbd38abfb7e7190",
           "75251c005db54f3d9d5a02e6eda8bec5",
           "f1d737930a9e4f3b9b401bf4c850fa0d",
-          "bd2efab674af48f59cec78a89c15f5ab"
+          "a3e3f24c24054a689c4fa0ec28445671"
         ],
-        "Left": -4244.1214149472517,
+        "Left": -4249.9190159878435,
         "Top": 3453.201466254638,
-        "Width": 1616.6432595825595,
-        "Height": 521.42358870248927,
+        "Width": 1622.4408606231514,
+        "Height": 507.74191869614333,
         "FontSize": 36.0,
         "InitialTop": 3506.4014662546379,
         "InitialHeight": 511.02358870248963,
@@ -4923,7 +4933,7 @@
         "Height": 544.731743809115,
         "FontSize": 36.0,
         "InitialTop": 3833.7056512080162,
-        "InitialHeight": 560.56630352907,
+        "InitialHeight": 543.93174380911478,
         "TextblockHeight": 43.2,
         "Background": "#FFC1D676"
       },
@@ -5052,8 +5062,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 2616.6529311450449,
-    "Y": -3624.5631359877289,
-    "Zoom": 1.0074339398208321
+    "X": 565.50912760116807,
+    "Y": -257.53326095559032,
+    "Zoom": 0.1553353913364775
   }
 }
