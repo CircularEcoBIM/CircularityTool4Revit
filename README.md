@@ -96,17 +96,30 @@ Once ready press play button on the Dynamo Player to run the script:
 
 The result, depending on the script, are written back to dedicated Revit parameters, exported to a predefined Excel file or visualized with colors in active Revit view.
 
-### 8. Run the first script
+### 8. Run the script `1_AssignLayer`
 
 <img src="https://user-images.githubusercontent.com/22922395/188679095-702dcf8a-7784-4286-bde4-a6c48e8fb800.png" alt="drawing" width="300"/>
 
-### 9. Run the first script
+By default, the script will preview the assignment with colors, for example:
 
-<img src="" alt="drawing" width="300"/>
+<img src="https://user-images.githubusercontent.com/22922395/188703017-0aee98bc-f757-4213-a773-dbc7d2f67aa3.png" alt="drawing" width="300"/>
 
-### 10. Run the first script
+### 9. Run the script `2_MeasureCircularity` 
 
-<img src="" alt="drawing" width="300"/>
+<img src="https://user-images.githubusercontent.com/22922395/188701345-3a697810-3d51-446e-af14-afd2c78edd8b.png" alt="drawing" width="300"/>
+
+Those are examplar results of running the circularity calculations tool:
+
+<img src="https://user-images.githubusercontent.com/22922395/188701679-a06b6dcc-5337-4385-a3eb-e2c2a61c2b6c.png" alt="drawing" width="450"/>
+
+
+### 10. Run the script `3_VisualizeResults`
+
+<img src="https://user-images.githubusercontent.com/22922395/188700900-96468c68-c0a3-452c-8112-779dd41ff79c.png" alt="drawing" width="200"/>
+
+This is the example how the results could look, where top floor is most and bottom least circular:
+
+<img src="https://user-images.githubusercontent.com/22922395/188701190-16f88e14-49bd-4e72-b35f-f1a52ef30b30.png" alt="drawing" width="300"/>
 
 # Contact
 In case of questions, please contact NAME@MAIL.COM
