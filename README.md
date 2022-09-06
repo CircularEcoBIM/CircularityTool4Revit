@@ -13,6 +13,7 @@ Read more at https://circularecobim.eu/
 ### 1.	Prerequisites:
 - Revit 2022+
 - Revit model prepared
+- MS Excel
 - this tool package. This can be done by cloning or downloading it from the GitHub repository: https://github.com/CircularEcoBIM/CircularityTool4Revit
 
     <img src="https://user-images.githubusercontent.com/22922395/188671413-b859f36d-6270-4614-8726-6d9ce0f7b889.png" alt="drawing" width="300"/>
@@ -112,6 +113,10 @@ Those are examplar results of running the circularity calculations tool:
 
 <img src="https://user-images.githubusercontent.com/22922395/188701679-a06b6dcc-5337-4385-a3eb-e2c2a61c2b6c.png" alt="drawing" width="450"/>
 
+The tool will create an Excel file in the choosen directory, and it will contain 3 tabs: MCI results, PCI results and one with general results. For example:  
+<img src="https://user-images.githubusercontent.com/22922395/188704350-8bc03e1b-c29f-40f5-b6f2-5644628c31d5.png" alt="drawing" width="800"/>  
+<img src="https://user-images.githubusercontent.com/22922395/188704114-2627bf10-9e35-4693-a56d-e80874eff25e.png" alt="drawing" width="800"/>  
+<img src="https://user-images.githubusercontent.com/22922395/188703974-5394e3a6-8772-47e5-99a9-ae589e77cdc5.png" alt="drawing" width="800"/>  
 
 ### 10. Run the script `3_VisualizeResults`
 
