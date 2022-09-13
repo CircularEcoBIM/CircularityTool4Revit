@@ -32,7 +32,7 @@ Now all the required Revit categories in your model will have appropriate parame
 
 ### 3.	Fill in the parameter values with your project data:
 -	Is internal – to mark the external walls (default: Yes)
--	Design for Disassembly parameters:
+-	Design for Disassembly parameters - if an element has multiple connections with others, select the parameter that describes the worst of the connections (the higher number, the worse):
     - Form containment  
       0 - not applicable  
       1 - Open, no inclusions  
