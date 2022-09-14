@@ -1,5 +1,5 @@
 {
-    "Concrete":["Concrete","C20/25","C25/30","C30/35","C40/50","reinforced","RC","aerated","pre-cast","in-situ",~"masonry","betão"],
+    "Concrete":["Concrete","C20/25","C25/30","C30/35","C40/50","reinforced","RC","aerated","pre-cast","in-situ","masonry","betão"],
     "Steel":["Steel","alloy","S235","S275","S355","S420","aço"],
     "Timber":["Timber","plywood","softwood","oak","pine","wood","lumber","MDF","OSB","parquet","laminate","madeira"],
     "Glass":["Glass","Glazing","Vidro"],
