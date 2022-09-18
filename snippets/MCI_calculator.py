@@ -77,9 +77,9 @@ U, U_av = 100, 100
 X = (L/L_av)*(U/U_av)
 
 # MCI - Material Circularity Indicator
-# MCI = max(0, 1-(0.9/X*LFI))
-MCI = [1-(0.9/X*LFIj) if X>0.9*LFIj else 0 for LFIj in LFI]
-
+# MCI = 1-(0.9/X*LFI)  but 0 <= MCI <= 1.0
+MCI = [1-(0.9/X*LFIj) if X>0.9*LFIj else 0.0 for LFIj in LFI]
+MCI = [mci if mci<=1.0 else 1.0 for mci in MCI]
 
 """RESULTS"""
 OUT = E_E, C_E, W_0, W_F, W_C, V_F, W, LFI, X, MCI
