@@ -115,8 +115,8 @@ Those are examplar results of running the circularity calculations tool:
 
 The tool will create an Excel file in the choosen directory, and it will contain 3 tabs: MCI results, PCI results and one with general results. For example:  
 <img src="https://user-images.githubusercontent.com/22922395/188704350-8bc03e1b-c29f-40f5-b6f2-5644628c31d5.png" alt="drawing" width="800"/>  
-<img src="https://user-images.githubusercontent.com/22922395/188704114-2627bf10-9e35-4693-a56d-e80874eff25e.png" alt="drawing" width="800"/>  
-<img src="https://user-images.githubusercontent.com/22922395/188703974-5394e3a6-8772-47e5-99a9-ae589e77cdc5.png" alt="drawing" width="800"/>  
+<img src="https://user-images.githubusercontent.com/22922395/188704114-2627bf10-9e35-4693-a56d-e80874eff25e.png" alt="drawing" width="800"/> 
+<img src="https://user-images.githubusercontent.com/22922395/190928035-23cff713-4d92-4468-82ed-881f5cd73055.png" alt="drawing" width="1000"/>  
 
 ### 10. Run the script `3_VisualizeResults`
 
