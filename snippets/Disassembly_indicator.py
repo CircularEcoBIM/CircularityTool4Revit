@@ -1,3 +1,6 @@
+# Copyright (c) 2022 CircularEcoBIM, authors: Artur Tomczak <artomczak@gmail.com>, Ana Mestre <amestre@3drivers.pt >, Joana Fernandes <joanabfernandes@tecnico.ulisboa.pt>
+# This file is part of CircularEcoBIM.
+
 
 import json
 
