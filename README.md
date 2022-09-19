@@ -103,7 +103,13 @@ The result, depending on the script, are written back to dedicated Revit paramet
 
 By default, the script will preview the assignment with colors, for example:
 
-<img src="https://user-images.githubusercontent.com/22922395/188703017-0aee98bc-f757-4213-a773-dbc7d2f67aa3.png" alt="drawing" width="300"/>
+<img src="https://user-images.githubusercontent.com/22922395/190914271-1c20da65-afb8-4499-8225-c52b2097118a.png" alt="drawing" width="450"/>
+
+and the colors correspond to layers:
+
+<img src="https://user-images.githubusercontent.com/22922395/190913976-4aabc63a-c218-49a0-9406-6b7f6be7f675.png" alt="drawing" width="500"/>
+* Only those three layers are included in the calculations.
+
 
 ### 9. Run the script `2_MeasureCircularity` 
 
@@ -113,14 +119,26 @@ Those are examplar results of running the circularity calculations tool:
 
 <img src="https://user-images.githubusercontent.com/22922395/188701679-a06b6dcc-5337-4385-a3eb-e2c2a61c2b6c.png" alt="drawing" width="450"/>
 
-The tool will create an Excel file in the choosen directory, and it will contain 3 tabs: MCI results, PCI results and one with general results. For example:  
-<img src="https://user-images.githubusercontent.com/22922395/188704350-8bc03e1b-c29f-40f5-b6f2-5644628c31d5.png" alt="drawing" width="800"/>  
-<img src="https://user-images.githubusercontent.com/22922395/188704114-2627bf10-9e35-4693-a56d-e80874eff25e.png" alt="drawing" width="800"/> 
-<img src="https://user-images.githubusercontent.com/22922395/190928035-23cff713-4d92-4468-82ed-881f5cd73055.png" alt="drawing" width="1000"/>  
+The tool will create an Excel file in the choosen directory, and it will contain 3 tabs: MCI results, PCI results and one with general results.
+
+The `OriginalMaterial` and `Material` columns in MCI tab show the material name mapping that is based on the predefined mapping pattern available here: 
+https://github.com/CircularEcoBIM/CircularityTool4Revit/blob/main/data/Material_mapping.json
+If some materials are not found please change Revit material names to the one that is present on the mapping pattern. If some materials are missing please contact the authors or suggest Pull Reqest to the mapping file on GitHub.
+
+Example of a correct Excel export:  
+
+<img src="https://user-images.githubusercontent.com/22922395/188704350-8bc03e1b-c29f-40f5-b6f2-5644628c31d5.png" alt="drawing" width="1100"/>  
+<img src="https://user-images.githubusercontent.com/22922395/188704114-2627bf10-9e35-4693-a56d-e80874eff25e.png" alt="drawing" width="700"/>  
+<!-- <img src="https://user-images.githubusercontent.com/22922395/188703974-5394e3a6-8772-47e5-99a9-ae589e77cdc5.png" alt="drawing" width="1100"/> -->
+<img src="https://user-images.githubusercontent.com/22922395/190928035-23cff713-4d92-4468-82ed-881f5cd73055.png" alt="drawing" width="1100"/>
 
 ### 10. Run the script `3_VisualizeResults`
 
 <img src="https://user-images.githubusercontent.com/22922395/188700900-96468c68-c0a3-452c-8112-779dd41ff79c.png" alt="drawing" width="200"/>
+
+Colors represent result ranges as shown below:
+
+<img src="https://user-images.githubusercontent.com/22922395/190914335-d61bb3a7-bd38-40dc-9338-75b9a7d4e60c.png" alt="drawing" width="400"/>
 
 This is the example how the results could look, where top floor is most and bottom least circular:
 
@@ -128,3 +146,4 @@ This is the example how the results could look, where top floor is most and bott
 
 # Contact
 In case of questions, please contact NAME@MAIL.COM
+
