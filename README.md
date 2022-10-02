@@ -145,5 +145,5 @@ This is the example how the results could look, where top floor is most and bott
 <img src="https://user-images.githubusercontent.com/22922395/188701190-16f88e14-49bd-4e72-b35f-f1a52ef30b30.png" alt="drawing" width="300"/>
 
 # Contact
-In case of questions, please contact NAME@MAIL.COM
+In case of questions, please contact Artur Tomczak - artomczak@gmail.com
 
