@@ -21,7 +21,9 @@ stats = {'datetime':current_time,
         'ip_address':ip_address,
         'city':data["city"],
         #'region':data["region"],
-        'country_name':data["country_name"]}
+        'country_name':data["country_name"],
+        'other': ', '.join(list(IN[0]))
+        }
 
 url = "https://artomczak.pythonanywhere.com/" + "ecobim_stats"
 
@@ -29,4 +31,5 @@ stats = parse.urlencode(stats).encode()
 req =  request.Request(url, data=stats) # this will make the method "POST"
 resp = request.urlopen(req)
 
+OUT = 'Sent.'
 #OUT = "Usage stats: " + ", ".join( [current_time, ip_address, data["city"], data["country_name"]] )
