@@ -144,6 +144,11 @@ This is the example how the results could look, where top floor is most and bott
 
 <img src="https://user-images.githubusercontent.com/22922395/188701190-16f88e14-49bd-4e72-b35f-f1a52ef30b30.png" alt="drawing" width="300"/>
 
+# Disclaimer
+The authors of this code reserve the right to track usage statistics, such as IP and city of the user for research purposes. Another data collected is the list of unique material names in user project, for the purpose of improving the material matching algorithm in the future. Please have that in mind and do not use if you do not want to share your IP, location or project contains confidential material names. Administrators for this service reserve the right to moderate all information used, shared, or stored with this service at any time. 
+
+The material embodied in this software is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of fitness for a particular purpose. 
+
 # Contact
 In case of questions, please contact Artur Tomczak - artomczak@gmail.com
 
