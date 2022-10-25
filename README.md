@@ -8,17 +8,17 @@ Read more at https://circularecobim.eu/
 
 # Instructions 
 
-## Preparing the data 
-
-### 1.	Prerequisites:
+## Prerequisites:
 - Revit 2022+
 - Revit model prepared
 - MS Excel
-- this tool package. This can be done by cloning or downloading it from the GitHub repository: https://github.com/CircularEcoBIM/CircularityTool4Revit
+- this tool package. This can be done by cloning or downloading it as .zip from the GitHub repository: https://github.com/CircularEcoBIM/CircularityTool4Revit
 
     <img src="https://user-images.githubusercontent.com/22922395/188671413-b859f36d-6270-4614-8726-6d9ce0f7b889.png" alt="drawing" width="300"/>
 
-### 2.	Add a shared parameter file to the Revit project
+## Preparing the data 
+
+### 1.	Add a shared parameter file to the Revit project
 - Go to `Insert/Insert from File/Insert Views from File`
 
     <img src="https://user-images.githubusercontent.com/22922395/188668340-e1054290-333c-4f04-b141-241dad926040.png" alt="drawing" width="500"/>    
@@ -30,7 +30,7 @@ Read more at https://circularecobim.eu/
 
 Now all the required Revit categories in your model will have appropriate parameters.
 
-### 3.	Fill in the parameter values with your project data:
+### 2.	Fill in the parameter values with your project data:
 -	Is internal – to mark the external walls (default: Yes)
 -	Design for Disassembly parameters - if an element has multiple connections with others, select the parameter that describes the worst of the connections (the higher number, the worse):
     - Form containment  
@@ -65,18 +65,19 @@ Now all the required Revit categories in your model will have appropriate parame
     -	EoL recycling – the percentage of material planned to be recycled
     -	EoL reuse –  the percentage of material planned to be reused
 
-### 4. Open the desired 3D view for visualization. Make sure it is in ‘Shaded’ or ‘Consistent Colors’ mode, as only those display colours.  You can change the display mode on the bottom-left bar in Revit.
+### 3. Open the desired 3D view for visualization. Make sure it is in ‘Shaded’ or ‘Consistent Colors’ mode, as only those display colours.  You can change the display mode on the bottom-left bar in Revit.
 
 <img src="https://user-images.githubusercontent.com/22922395/188670432-7e9b7fdd-b4e3-4986-8c23-ff5ae7a846dd.png" alt="drawing" width="250"/>
 
-### 5. Make sure that your Revit model doesn’t contain Model Groups as they deny access to write back values of individual element parameters.
+### 4. Make sure that your Revit model doesn’t contain Model Groups as they deny access to write back values of individual element parameters.
 
 Grops are not preventing the tool from working, but all elements belonging to a group will be omitted in the calculations. You can ungroup existing groups by selecting them and using `Ungroup`
 
 <img src="https://user-images.githubusercontent.com/22922395/188673574-04a0d1f6-c612-484b-bde6-433fd1d9fb1c.png" alt="drawing" width="250"/>
 
 ## Using the tool
-### 7. In Revit, open Dynamo Player:
+
+### 5. In Revit, open Dynamo Player:
 
 <img src="https://user-images.githubusercontent.com/22922395/188670575-05b20dea-81aa-464f-aa59-dc46e1804c8f.png" alt="drawing" width="600"/>
 
@@ -97,7 +98,7 @@ Once ready press play button on the Dynamo Player to run the script:
 
 The result, depending on the script, are written back to dedicated Revit parameters, exported to a predefined Excel file or visualized with colors in active Revit view.
 
-### 8. Run the script `1_AssignLayer`
+### 6. Run the script `1_AssignLayer`
 
 <img src="https://user-images.githubusercontent.com/22922395/188679095-702dcf8a-7784-4286-bde4-a6c48e8fb800.png" alt="drawing" width="300"/>
 
@@ -111,7 +112,7 @@ and the colors correspond to layers:
 * Only those three layers are included in the calculations.
 
 
-### 9. Run the script `2_MeasureCircularity` 
+### 7. Run the script `2_MeasureCircularity` 
 
 <img src="https://user-images.githubusercontent.com/22922395/188701345-3a697810-3d51-446e-af14-afd2c78edd8b.png" alt="drawing" width="300"/>
 
@@ -132,7 +133,7 @@ Example of a correct Excel export:
 <!-- <img src="https://user-images.githubusercontent.com/22922395/188703974-5394e3a6-8772-47e5-99a9-ae589e77cdc5.png" alt="drawing" width="1100"/> -->
 <img src="https://user-images.githubusercontent.com/22922395/190928035-23cff713-4d92-4468-82ed-881f5cd73055.png" alt="drawing" width="1100"/>
 
-### 10. Run the script `3_VisualizeResults`
+### 8. Run the script `3_VisualizeResults`
 
 <img src="https://user-images.githubusercontent.com/22922395/188700900-96468c68-c0a3-452c-8112-779dd41ff79c.png" alt="drawing" width="200"/>
 
