@@ -11,7 +11,8 @@ Read more at https://circularecobim.eu/
 ## Prerequisites:
 - Revit 2022+
 - Revit model prepared
-- MS Excel
+- Dynamo 2.10+ (by default installed with Revit)
+- MS Excel installed
 - this tool package. This can be done by cloning or downloading it as .zip from the GitHub repository: https://github.com/CircularEcoBIM/CircularityTool4Revit
 
     <img src="https://user-images.githubusercontent.com/22922395/188671413-b859f36d-6270-4614-8726-6d9ce0f7b889.png" alt="drawing" width="300"/>
@@ -146,9 +147,9 @@ This is the example how the results could look, where top floor is most and bott
 <img src="https://user-images.githubusercontent.com/22922395/188701190-16f88e14-49bd-4e72-b35f-f1a52ef30b30.png" alt="drawing" width="300"/>
 
 # Disclaimer
-The authors of this code reserve the right to track usage statistics, such as IP and city of the user for research purposes. Another data collected is the list of unique material names in user project, for the purpose of improving the material matching algorithm in the future. Please have that in mind and do not use if you do not want to share your IP, location or project contains confidential material names. Administrators for this service reserve the right to moderate all information used, shared, or stored with this service at any time. 
+CircularEcoBIM and authors of this code reserve the right to track usage statistics from this product, including non-personal usage information, such as: program version, IP address with allocated city and country, and a list of material names in the project, for the purpose of research and improving the tool in the future, for example by providing better material name mapping. This information is not used to identify or contact you, and we do not access the project data other than listed in this section. The tool requires user accepptance of the data sharing before each use of the calculation module. You can always request access and removal of your data as long as you can specify concerned IP addresses, by sending email to the person listed below.
 
-The material embodied in this software is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of fitness for a particular purpose. 
+The code of this software is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of fitness for a particular purpose. The license information is provided in the GitHub source repository.
 
 # Contact
 In case of questions, please contact Artur Tomczak - artomczak@gmail.com
