@@ -6705,11 +6705,11 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "//Building Circularity Indicator\n//LK = 0.1+0.2+0.7+0.8+0.9+1.0;\n//We take only Structure+Skin+SpacePlan\nLK = 0.2+0.7+0.9;\nBCI = Math.Sum(SCI*BL)/LK;",
+      "Code": "//Building Circularity Indicator\n//LK = 0.1+0.2+0.7+0.8+0.9+1.0;\n//We take only Structure+Skin+SpacePlan\nBCI = Math.Sum(SCI*LK)/Math.Sum(LK);",
       "Id": "2f43435bea9347338a776a70e09bc5cb",
       "Inputs": [
         {
-          "Id": "2bb1ec679b224bd9bcd851f85daf0d89",
+          "Id": "56c61c93ad2e4f1aa023abdfa34557e6",
           "Name": "SCI",
           "Description": "SCI",
           "UsingDefaultValue": false,
@@ -6718,9 +6718,9 @@
           "KeepListStructure": false
         },
         {
-          "Id": "653650c5d46d4da1b66012e72b250301",
-          "Name": "BL",
-          "Description": "BL",
+          "Id": "d5bb9e90dc044aaebc47a4493da8131d",
+          "Name": "LK",
+          "Description": "LK",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -6729,16 +6729,7 @@
       ],
       "Outputs": [
         {
-          "Id": "bcc09e39a8534b9bbb1ff263393924f7",
-          "Name": "",
-          "Description": "LK",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "fb5079c9ea2541c2a5676fb9f3aa7bc0",
+          "Id": "07cdbf613ad9498cbabe936a2710b120",
           "Name": "",
           "Description": "BCI",
           "UsingDefaultValue": false,
@@ -10479,8 +10470,8 @@
     },
     {
       "Start": "4308258c6ace4032abe34a142c31897a",
-      "End": "653650c5d46d4da1b66012e72b250301",
-      "Id": "a5c6a45c3c1b434a95009e5ff1373361"
+      "End": "d5bb9e90dc044aaebc47a4493da8131d",
+      "Id": "20c90abaf357400eba4ac4a6c1e19f21"
     },
     {
       "Start": "0830258115e743ad9011292353443fd5",
@@ -10748,9 +10739,9 @@
       "Id": "001f5836ecd140c7ae3d1fe07e7fe3e5"
     },
     {
-      "Start": "fb5079c9ea2541c2a5676fb9f3aa7bc0",
+      "Start": "07cdbf613ad9498cbabe936a2710b120",
       "End": "747abca4394d4ab481ee35609f9fad90",
-      "Id": "4f43ca3822aa4fab90bde656a871e31c"
+      "Id": "1a9841d8f17b4a33aacdee3ebde9d889"
     },
     {
       "Start": "dfa05a016f044ed2ad94f2b2ad21e1d5",
@@ -11169,11 +11160,6 @@
     },
     {
       "Start": "24e950775ed94d50bbf881eeb7bf377c",
-      "End": "2bb1ec679b224bd9bcd851f85daf0d89",
-      "Id": "6009d8fc3529449d81ba982f59439e18"
-    },
-    {
-      "Start": "24e950775ed94d50bbf881eeb7bf377c",
       "End": "51a81347b66a4b018c8cee70718d97d9",
       "Id": "9fb83c9066f84e1fa8c9f278111678b8"
     },
@@ -11181,6 +11167,11 @@
       "Start": "24e950775ed94d50bbf881eeb7bf377c",
       "End": "186893a6678e4d40a6d2e367ac8db707",
       "Id": "f9c9b4be0d244328a88389c308b2eee4"
+    },
+    {
+      "Start": "24e950775ed94d50bbf881eeb7bf377c",
+      "End": "56c61c93ad2e4f1aa023abdfa34557e6",
+      "Id": "2c2bb9bfe9c24ea3887bcb829e958da3"
     },
     {
       "Start": "8d6d3d3351f7400e9fbed3d87a8fa8da",
@@ -12715,8 +12706,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 40585.797120607342,
-        "Y": 5726.6382528733857
+        "X": 41143.2666094533,
+        "Y": 5760.6428612503114
       },
       {
         "ShowGeometry": false,
@@ -12725,8 +12716,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 41036.77780920994,
-        "Y": 5730.1640621647812
+        "X": 41437.620010986422,
+        "Y": 5761.0773425074412
       },
       {
         "ShowGeometry": false,
@@ -12955,8 +12946,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 40026.022309309985,
-        "Y": 5719.522670758015
+        "X": 40667.988097759211,
+        "Y": 5759.709935203472
       },
       {
         "ShowGeometry": false,
@@ -13025,8 +13016,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 41829.723167805831,
-        "Y": 5700.3113938336128
+        "X": 41790.595264999785,
+        "Y": 5689.3264317031835
       },
       {
         "ShowGeometry": false,
@@ -13685,8 +13676,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 42320.796317536704,
-        "Y": 5770.6688750732192
+        "X": 42300.395673580191,
+        "Y": 5744.7757500514927
       },
       {
         "ShowGeometry": false,
@@ -14449,12 +14440,12 @@
           "2a32c8cbc12b468e99316ce225b237a3",
           "77d07a11e7ec4653afcd4eabe26d4f1c"
         ],
-        "Left": 40016.022309309985,
-        "Top": 5647.111393833613,
-        "Width": 2465.1740082267206,
-        "Height": 228.15748123960657,
+        "Left": 40657.988097759211,
+        "Top": 5636.1264317031837,
+        "Width": 1802.8075758209816,
+        "Height": 243.3835035002885,
         "FontSize": 36.0,
-        "InitialTop": 5700.3113938336128,
+        "InitialTop": 5689.3264317031835,
         "InitialHeight": 215.35748123960639,
         "TextblockHeight": 43.2,
         "Background": "#FFBB87C6"
@@ -14534,8 +14525,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -17839.23939018057,
-    "Y": -3919.7926175613979,
-    "Zoom": 0.83823651324589388
+    "X": -34413.493813705085,
+    "Y": -4364.7959382046929,
+    "Zoom": 0.83902053470406879
   }
 }
